@@ -147,3 +147,40 @@ input:valid:not(:focus) {
 input:invalid:not(:focus) {
     border: 1.5px solid #ff0000;
 }
+
+/* footer */
+
+a {
+    text-decoration: none;
+    color: rgb(85, 85, 255);
+}
+
+#submit-button {
+    width: 13vw;
+    height: 7vh;
+    margin-left: calc(var(--distance-from-poster)*1vw);
+    margin-top: calc(calc(var(--distance-from-poster)/3)*1vw);
+
+    background-image: linear-gradient(90deg, rgb(0, 103, 163), rgb(1, 156, 71));
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 8px;
+    border: 2px solid;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+}
+
+#existing-account-p {
+    margin-left: calc((var(--distance-from-poster) + 0.5) * 1vw);
+    margin-top: 1vw;
+    font-size: 18px;
+}
+
+#existing-account-p>a {
+    font-size: 17px;
+}
+
+#submit-button:hover {
+    color: rgb(206, 198, 188);
+}
