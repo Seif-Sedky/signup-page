@@ -17,6 +17,16 @@ body {
     margin: 0px;
 }
 
+body {
+    display: flex;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+    /* Or 0 for no spacing at all */
+}
+
 #poster-wrapper {
     width: 700px;
     height: 100%;
@@ -26,7 +36,7 @@ body {
 }
 
 /* If we were to push the wrapper directly, the background would apply to the padded area */
-#title-wrapper-position { 
+#title-wrapper-position {
     padding-top: 225px;
 }
 
@@ -51,4 +61,17 @@ body {
     font-family: "norsebold";
     color: white;
     font-size: 50px;
+}
+
+/* CONTENT */
+#content-description{
+    margin-top: 15vh;
+    margin-left: 5vw;
+}
+
+.text {
+    font-weight: 900;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    max-width: 70%;
+    font-size: 25px;
 }
