@@ -4,5 +4,22 @@
         url('norse-bold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+}
 
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+}
+
+#poster-wrapper {
+    width: 700px;
+    height: 100%;
+    background-image: url('imgs/plant.png');
+    background-size: cover;
 }
