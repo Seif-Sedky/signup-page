@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'norsebold';
-    src: url('norse-bold-webfont.woff2') format('woff2'),
-        url('norse-bold-webfont.woff') format('woff');
+    src: url('fonts/norse-bold-webfont.woff2') format('woff2'),
+        url('fonts/norse-bold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -22,4 +22,33 @@ body {
     height: 100%;
     background-image: url('imgs/plant.png');
     background-size: cover;
+
+}
+
+/* If we were to push the wrapper directly, the background would apply to the padded area */
+#title-wrapper-position { 
+    padding-top: 225px;
+}
+
+#title-wrapper {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+#logo {
+    filter: invert(1);
+    /* 100% invert = black → white */
+    width: 150px;
+    height: 150px;
+
+}
+
+#website-name {
+    font-family: "norsebold";
+    color: white;
+    font-size: 50px;
 }
